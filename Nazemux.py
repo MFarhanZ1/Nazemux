@@ -1,6 +1,4 @@
 import cv2
-import pyttsx3
-import sklearn
 import telegram_send 
 import os
 import time
@@ -31,6 +29,7 @@ cam.release()
 out.release()
 cv2.destroyAllWindows()
 
+# under construction, sementara kayak gini dulu, belum auto
 os.system('telegram-send --video output.avi --caption Logged Video ')
 time.sleep(2)
 os.system('del /f output.avi')
